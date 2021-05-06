@@ -9,6 +9,9 @@
   </thead>
   <tbody>
     <tr *ngFor="let tempproduct of products">
+      <td class="align-middle">
+        <img src="{{tempproduct.imageUrl}}" height="50" />
+      </td>
       <td>{{tempproduct.name}}</td>
       <td>{{tempproduct.unitPrice}} | currency:'USD'</td>
       <td>{{tempproduct.unitsInStock}}</td>
