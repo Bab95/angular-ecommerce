@@ -9,7 +9,7 @@ import {map} from 'rxjs/operators';
 })
 export class ProductService {
 
-  private baseUrl = 'http://localhost:8080/api/product';
+  private baseUrl = 'http://localhost:8080/api/product?size=100';
   constructor(private httpClient: HttpClient) { }
 
   getProductList(): Observable<Product[]>{
